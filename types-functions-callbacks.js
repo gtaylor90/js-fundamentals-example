@@ -232,6 +232,9 @@ console.assert(NUMBER === 96)
 var machine = function(){
 	return 'hello world'
 }
+var factory = function(){
+    return machine
+}
 
 console.assert(factory()() === 'hello world') // INCEPTION!
 
